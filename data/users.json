@@ -1,0 +1,26 @@
+[
+    {
+        "name": "administrator",
+        "email": "admin@test.com",
+        "password": "qweasd",
+        "role": "admin"
+    },
+    {
+        "name": "some user",
+        "email": "some@test.com",
+        "password": "123456",
+        "role": "publisher"
+    },
+    {
+        "name": "another user",
+        "email": "another@test.com",
+        "password": "098765",
+        "role": "author"
+    },
+    {
+        "name": "simple user",
+        "email": "simpleuser@test.com",
+        "password": "098765",
+        "role": "user"
+    }
+]
