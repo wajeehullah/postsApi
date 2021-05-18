@@ -33,7 +33,7 @@ class UserRepository {
                 password: user.password,
                 role: user.role
             });
-    
+
             await newUser.save();
             console.log("user saved...");
         } catch (ex) {

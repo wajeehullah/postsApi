@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const connectDb = require('./config/db');
+const morgan = require('morgan'); // npm install --save morgan
+// npm install
 connectDb();
 const app = express();
 const usersRouter = require('./routers/usersRouter');
@@ -11,6 +13,7 @@ const port = 30001;
 // Body parser
 app.use(express.json());
 app.use(cors());
+app.use(morgan()); // added for logging requests to console 
 // configure routers
 app.use('/user', usersRouter);
 app.use('/posts', postsRouter);
